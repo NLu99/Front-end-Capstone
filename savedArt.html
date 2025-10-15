@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Saved For Later Images</title>
+
+    <!--Link stylesheet-->
+    <link rel="stylesheet" href="scss/styling.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/545b83f5c9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Link JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+    <!--Link Fonts-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap");
+    </style>
+  </head>
+
+  <body onload="loadSavedImages()">
+    <!--Top Navigation-->
+    <section class="topnav">
+      <div class="container">
+        <img src="images/logo.png" alt="logo" />
+        <nav>
+          <a href="homepage.html">Characteristics</a>
+          <a href="examples.html">Famous Examples</a>
+          <a href="references.html">References</a>
+        </nav>
+        <div class="dropnav">
+          <a href="#" id="galleryDrop">My Gallery</a>
+          <!--Dropdown menu-->
+          <div class="dropdown" style="display: none">
+            <div>
+              <a href="savedArt.html">Saved</a>
+            </div>
+            <div>
+              <a href="savedLike.html">Liked</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="saved">
+      <div class="container">
+        <h3>Saved Images</h3>
+        <div id="saved-imgs"></div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+      <div class="container">
+        <ul>
+          <li><a href="homepage.html">Characteristics</a></li>
+          <li><a href="references.html">References & Further reading</a></li>
+          <li><a href="examples.html">Famous Examples</a></li>
+          <li><a href="savedArt.html">Saved Artworks</a></li>
+          <li><a href="savedLike.html">My Likes</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

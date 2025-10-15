@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <title>Famous Impressionist Artworks</title>
+
+    <!--Link stylesheet-->
+    <link rel="stylesheet" href="scss/styling.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/545b83f5c9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Link JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+    <!--Link Fonts-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap");
+    </style>
+  </head>
+
+  <body onload="loadComments()">
+    <!--Top Navigation-->
+    <section class="topnav">
+      <div class="container">
+        <img src="images/logo.png" alt="logo" />
+        <nav>
+          <a href="homepage.html">Characteristics</a>
+          <a href="examples.html">Famous Examples</a>
+          <a href="references.html">References</a>
+        </nav>
+        <div class="dropnav">
+          <a href="#" id="galleryDrop">My Gallery</a>
+          <!--Dropdown menu-->
+          <div class="dropdown" style="display: none">
+            <div>
+              <a href="savedArt.html">Saved</a>
+            </div>
+            <div>
+              <a href="savedLike.html">Liked</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Introduction-->
+    <section class="famous-intro">
+      <div class="info">
+        <h3>Famous Artworks</h3>
+        <p>
+          Below are some of the most famous works of the Impressionist movement.
+        </p>
+      </div>
+    </section>
+
+    <!--Example artworks-->
+    <section class="examples">
+      <div class="container">
+        <div class="image-wrapper">
+          <div class="indiv-example">
+            <img src="images/vangogh.png" alt="starry night" />
+            <i class="fa-regular fa-heart" id="heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <p class="img-title">Starry Night</p>
+            <p>Vincent van Gogh</p>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <div class="indiv-example">
+            <img src="images/monet 1.png" />
+            <i class="fa-regular fa-heart" id="heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <p class="img-title">Monet Family</p>
+            <p>Claude Monet</p>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <div class="indiv-example">
+            <img src="images/monet 2.png" />
+            <i class="fa-regular fa-heart" id="heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <p class="img-title">Water Lillies</p>
+            <p>Claude Monet</p>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <div class="indiv-example">
+            <img src="images/renoir.png" />
+            <i class="fa-regular fa-heart" id="heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <p class="img-title">Luncheon of the Boating Party</p>
+            <p>Pierre-Auguste Renoir</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!--Form-->
+    <section class="form-section">
+      <div class="container">
+        <div class="info">
+          <h3>Would you like to learn more?</h3>
+          <p>
+            This is barely the tip of the iceberg! If you’re eager to learn more
+            about impressionist art, please sign up for our newsletter.
+          </p>
+          <br />
+          <p>I’d like to receive...</p>
+          <br />
+        </div>
+        <div class="form">
+          <form>
+            <div class="radio-input">
+              <div class="radio-select">
+                <input type="radio" id="monthly" value="monthly" />
+                <label>Monthly newsletters</label>
+              </div>
+              <div class="radio-select">
+                <input type="radio" id="bi-weekly" value="biweekly" />
+                <label>Bi-weekly newsletters</label>
+              </div>
+            </div>
+            <div class="inputTxt">
+              <input type="text" id="email" placeholder="Your email address" />
+            </div>
+            <input type="submit" class="button" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--Comment section-->
+    <section class="comment-section">
+      <div class="container">
+        <h4>Leave a comment below</h4>
+        <form>
+          <input type="text" id="new-comment" placeholder="Type your comment" />
+          <br />
+          <button id="post-btn" class="button">Post</button>
+        </form>
+      </div>
+
+      <div id="comment-container">
+        <!-- Existing comments will go here -->
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+      <div class="container">
+        <ul>
+          <li><a href="homepage.html">Characteristics</a></li>
+          <li><a href="references.html">References & Further reading</a></li>
+          <li><a href="examples.html">Famous Examples</a></li>
+          <li><a href="savedArt.html">Saved Artworks</a></li>
+          <li><a href="savedLike.html">My Likes</a></li>
+        </ul>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
