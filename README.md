@@ -10,3 +10,6 @@ This website includes the following functionalities
 + a drop-down menu
 + Jquery animation effects
 + a function with chained effects.
+
+# Usage instructions
++ run the file called "homepage.html" to view the website
